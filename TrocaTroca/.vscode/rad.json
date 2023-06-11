@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[{"Id":50100,"Kind":17,"Name":"MyExtension","PackagePath":"/src/t.al"}],"Modified":[{"Id":50100,"Kind":12,"Name":"FarmerPost","PackagePath":"/src/Page/FarmerPagePost.Page.al"},{"Id":50100,"Kind":10,"Name":"FarmerTable","PackagePath":"/src/Table/FarmerTable.Table.al"}],"Removed":[]}
