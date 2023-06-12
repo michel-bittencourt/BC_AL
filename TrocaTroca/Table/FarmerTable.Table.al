@@ -20,6 +20,10 @@ table 50100 FarmerTable
             DataClassification = ToBeClassified;
 
         }
+        field(4; Active; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
@@ -34,29 +38,8 @@ table 50100 FarmerTable
         key(Key3; Nickname)
         {
         }
+        key(Key4; Active)
+        {
+        }
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }
