@@ -1,0 +1,33 @@
+{
+  "id": "cdbaadeb-e985-46e9-9cf5-c81b0549e5ab",
+  "name": "tccmichel",
+  "publisher": "michel",
+  "version": "1.0.1.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50201,
+      "to": 50249
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "10.0",
+  "features": [
+    "NoImplicitWith", "TranslationFile"
+  ],
+  "preprocessorSymbols": ["DEBUG"]
+}

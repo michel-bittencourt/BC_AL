@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="cronus">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 159788982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cars List</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Lista de Carros</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CrnCarsTable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 159788982 - Field 2559663699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Código</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CrnCarsTable - Field codigo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 159788982 - Field 3485099947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brand</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Marca</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CrnCarsTable - Field nome - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 861694829 - NamedType 3123481463" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postcode has an invalid format.</source>
+          <note from="Developer" annotates="general" priority="2">O CEP tem um formato inválido.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CrnApiController - NamedType Lbl400ErrorMessage</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 861694829 - NamedType 2784444699" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The requested Resource was not found in the Web Service, check the URL registered for the API.</source>
+          <note from="Developer" annotates="general" priority="2">O Recurso solicitado não foi encontrado no Web Service, verifique a URL cadastrada para a API.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CrnApiController - NamedType Lbl404ErrorMessage</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 861694829 - NamedType 966573136" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The search could not be performed, an internal error occurred in the API.</source>
+          <note from="Developer" annotates="general" priority="2">Não foi possível realizar a busca, ocorreu um erro interno na API.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CrnApiController - NamedType Lbl500ErrorMessage</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 861694829 - NamedType 226649788" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unable to perform the search.</source>
+          <note from="Developer" annotates="general" priority="2">Não foi possível realizar a busca.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CrnApiController - NamedType LblGenericErrorMessage</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 861694829 - Method 3259251506 - NamedType 3288667445" size-unit="char" translate="yes" xml:space="preserve">
+          <source>An error occurred while trying to execute the request: %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CrnApiController - Method GET - NamedType LblRequestError</note>
+        </trans-unit>
+        <trans-unit id="Page 112160543 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cars list</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Lista de carros</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 112160543 - Control 2559663699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Transaction Type field.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Tipo de Transação</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPage - Control codigo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 112160543 - Control 3485099947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Date field.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Data</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPage - Control nome - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3178616775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cars list API</source>
+          <note from="Developer" annotates="general" priority="2">PTB=API de lista de carros</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPageAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3178616775 - Control 2559663699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction Type</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Tipo de Transação</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPageAPI - Control codigo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3178616775 - Control 3485099947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Data</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPageAPI - Control nome - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3178616775 - Control 3092263724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SystemId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CrnCarsListPageAPI - Control systemId - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
