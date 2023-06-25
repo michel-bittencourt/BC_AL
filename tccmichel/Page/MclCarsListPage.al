@@ -1,9 +1,10 @@
-page 50203 CrnCarsList
+page 50203 CarsList
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = CrnCarsTable;
+    SourceTable = CarsTable;
+    SourceTableView = sorting("nome") order(ascending);
     Caption = 'Cars list', Comment = 'PTB=Lista de carros';
 
     layout
@@ -34,13 +35,23 @@ page 50203 CrnCarsList
         {
             action("Sync cars")
             {
-                ApplicationArea = All;
-
                 trigger OnAction()
                 var
-                    CarsSync: Codeunit CrnCarsApiControllerSync;
+                    ApiControllerRequest: Codeunit CarsApiControllerRequest;
+                    response: Text;
+                    errorMsg: Text;
+                    apiResponseHandler: Codeunit CarsApiControllerResponse;
                 begin
-                    CarsSync.SyncPostCar();
+                    response := ApiControllerRequest.GET('https://parallelum.com.br/fipe/api/v1/carros/marcas', errorMsg);
+                    if errorMsg <> '' then
+                        Error(errorMsg)
+                    else
+                        Message('Your API Call Response: \' + response);
+
+                    if response <> '' then begin
+                        if apiResponseHandler.UsersInfoFromResponse(response) then
+                            Message('Records inserted Successfully!');
+                    end;
                 end;
             }
         }

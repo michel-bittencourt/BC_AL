@@ -1,21 +1,20 @@
-table 50201 CrnCarsTable
+table 50201 CarsTable
 {
-    DataClassification = CustomerContent;
+    DataClassification = ToBeClassified;
     Caption = 'Cars List', Comment = 'PTB=Lista de Carros';
-    DrillDownPageID = CrnCarsList;
-    LookupPageID = CrnCarsList;
 
     fields
     {
         field(1; "codigo"; Code[20])
         {
             Caption = 'Code', Comment = 'PTB=Código';
-            DataClassification = CustomerContent;
+            DataClassification = ToBeClassified;
+
         }
         field(2; "nome"; Text[200])
         {
             Caption = 'Brand', Comment = 'PTB=Marca';
-            DataClassification = CustomerContent;
+            DataClassification = ToBeClassified;
         }
     }
 
@@ -24,6 +23,9 @@ table 50201 CrnCarsTable
         key(Key1; "codigo")
         {
             Clustered = true;
+        }
+        key(Key2; "nome")
+        {
         }
     }
 }

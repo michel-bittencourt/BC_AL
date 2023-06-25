@@ -1,9 +1,9 @@
-page 50201 CrnCarsCard
+page 50201 CarsCard
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Documents;
-    SourceTable = CrnCarsTable;
+    SourceTable = CarsTable;
     Caption = 'Cars', Comment = 'Carros';
     Editable = false;
 

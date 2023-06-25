@@ -1,4 +1,4 @@
-page 50202 CrnCarsListPageAPI
+page 50202 CarsListPageAPI
 {
     PageType = API;
     Caption = 'Cars list API', Comment = 'PTB=API de lista de carros';
@@ -7,7 +7,7 @@ page 50202 CrnCarsListPageAPI
     APIVersion = 'v1.0';
     EntityName = 'carsList';
     EntitySetName = 'carsListSet'; //Vai na API
-    SourceTable = CrnCarsTable;
+    SourceTable = CarsTable;
     DelayedInsert = true;
     ODataKeyFields = SystemId;
 
