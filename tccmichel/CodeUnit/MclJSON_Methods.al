@@ -31,6 +31,12 @@ codeunit 50203 JSON_Methods
         Value := json_Value.AsText;
     end;
 
+    procedure RecebeCodeCar(SelectedCar: Code[20]) value: code[20]
+    begin
+        value := SelectedCar;
+    end;
+
     var
+        SelectCode: code[20];
         ErrorQuery: Label 'Error in the query. If the issue persists, please contact the developers.', Comment = 'Erro na consulta. Caso persista, entre em contato com os desenvolvedores.';
 }

@@ -3,6 +3,41 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="tccmichel">
     <body>
       <group id="body">
+        <trans-unit id="Table 1355099309 - Field 2581046218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CodeBrand</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BuyCarsTable - Field CodeBrand - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1355099309 - Field 2297251839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CodeCar</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BuyCarsTable - Field CodeCar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1355099309 - Field 2614611918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>CodeModel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BuyCarsTable - Field CodeModel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1355099309 - Field 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table BuyCarsTable - Field Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1168391690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cars brand list</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Lista de marcas de Carros</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CarsBrandTable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1168391690 - Field 2559663699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Código</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CarsBrandTable - Field codigo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1168391690 - Field 3485099947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brand</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Marca</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CarsBrandTable - Field nome - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3860264463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cars List</source>
           <note from="Developer" annotates="general" priority="2">PTB=Lista de Carros</note>
@@ -23,35 +58,105 @@
           <note from="Developer" annotates="general" priority="2">Erro na consulta. Caso persista, entre em contato com os desenvolvedores.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit JSON_Methods - NamedType ErrorQuery</note>
         </trans-unit>
+        <trans-unit id="Page 3082759307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cars brand list</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Lista de marcas de carros</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBrandListPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3082759307 - NamedType 3427434262" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field code cannot be empty.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=O campo código precisa ser preenchido.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBrandListPage - NamedType ErrorFieldCodeEmpty</note>
+        </trans-unit>
+        <trans-unit id="Page 3082759307 - NamedType 2932922540" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The field brand cannot be empty.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=O campo marca precisa ser preenchido.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBrandListPage - NamedType ErrorFieldNameEmpty</note>
+        </trans-unit>
+        <trans-unit id="Page 3082759307 - Control 2559663699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Transaction Type field.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Tipo de Transação</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBrandListPage - Control codigo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3082759307 - Control 3485099947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Date field.</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Data</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBrandListPage - Control nome - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Buy car</source>
+          <note from="Developer" annotates="general" priority="2">PTB=Comprar carro</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2581046218 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you don't know the brand code, click on action and search for brand.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeBrand - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2581046218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brand Code</source>
+          <note from="Developer" annotates="general" priority="2">PTB: Código da marca</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeBrand - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2297251839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you don't know the car code, click on action and search for car.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeCar - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2297251839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Car Code</source>
+          <note from="Developer" annotates="general" priority="2">PTB: Código do carro</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeCar - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2614611918 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you don't know the model code, click on action and search for model.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeModel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2614611918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Model Code</source>
+          <note from="Developer" annotates="general" priority="2">PTB: Código da marca</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control CodeModel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2832340769 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you don't know the year, click on action and search for year.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control Year - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3934081279 - Control 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2">PTB: Código da marca</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsBuy - Control Year - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 4010757849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cars</source>
           <note from="Developer" annotates="general" priority="2">Carros</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CarsCard - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1966302475 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2636880974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cars list</source>
           <note from="Developer" annotates="general" priority="2">PTB=Lista de carros</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CarsList - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsListPage - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1966302475 - NamedType 3427434262" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2636880974 - NamedType 3427434262" size-unit="char" translate="yes" xml:space="preserve">
           <source>The field code cannot be empty.</source>
           <note from="Developer" annotates="general" priority="2">PTB=O campo código precisa ser preenchido.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CarsList - NamedType ErrorFieldCodeEmpty</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsListPage - NamedType ErrorFieldCodeEmpty</note>
         </trans-unit>
-        <trans-unit id="Page 1966302475 - NamedType 2932922540" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2636880974 - NamedType 2932922540" size-unit="char" translate="yes" xml:space="preserve">
           <source>The field brand cannot be empty.</source>
           <note from="Developer" annotates="general" priority="2">PTB=O campo marca precisa ser preenchido.</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CarsList - NamedType ErrorFieldNameEmpty</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsListPage - NamedType ErrorFieldNameEmpty</note>
         </trans-unit>
-        <trans-unit id="Page 1966302475 - Control 2559663699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2636880974 - Control 2559663699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Transaction Type field.</source>
           <note from="Developer" annotates="general" priority="2">PTB=Tipo de Transação</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CarsList - Control codigo - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsListPage - Control codigo - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 1966302475 - Control 3485099947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2636880974 - Control 3485099947 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Date field.</source>
           <note from="Developer" annotates="general" priority="2">PTB=Data</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page CarsList - Control nome - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CarsListPage - Control nome - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 175857710 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cars list API</source>

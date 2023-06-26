@@ -9,7 +9,7 @@
             "server": "http://172.16.10.25",
             "serverInstance": "MLB",
             "authentication": "UserPassword",
-            "startupObjectId": 50203,
+            "startupObjectId": 50204,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,

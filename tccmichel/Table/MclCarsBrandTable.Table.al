@@ -1,17 +1,17 @@
-table 50201 CarsTable
+table 50202 CarsBrandTable
 {
     DataClassification = ToBeClassified;
-    Caption = 'Cars List', Comment = 'PTB=Lista de Carros';
+    Caption = 'Cars brand list', Comment = 'PTB=Lista de marcas de Carros';
 
     fields
     {
-        field(1; "codigo"; Code[20])
+        field(2; "codigo"; Code[20])
         {
             Caption = 'Code', Comment = 'PTB=Código';
             DataClassification = ToBeClassified;
 
         }
-        field(2; "nome"; Text[200])
+        field(3; "nome"; Text[200])
         {
             Caption = 'Brand', Comment = 'PTB=Marca';
             DataClassification = ToBeClassified;
