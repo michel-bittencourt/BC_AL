@@ -4,7 +4,7 @@ page 50203 CarsListPage
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = CarsTable;
-    SourceTableView = sorting("nome") order(ascending);
+    SourceTableView = sorting(Brand) order(ascending);
     Caption = 'Cars list', Comment = 'PTB=Lista de carros';
 
     layout
@@ -13,17 +13,17 @@ page 50203 CarsListPage
         {
             repeater(Control1)
             {
-                field(codigo; Rec.codigo)
+                field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
                     ShowMandatory = true;
-                    ToolTip = 'Specifies the value of the Transaction Type field.', Comment = 'PTB=Tipo de Transação';
+                    ToolTip = '';
                 }
-                field(nome; Rec.nome)
+                field(Name; Rec.Brand)
                 {
                     ApplicationArea = All;
                     ShowMandatory = true;
-                    ToolTip = 'Specifies the value of the Date field.', Comment = 'PTB=Data';
+                    ToolTip = '';
                 }
             }
         }
@@ -37,10 +37,10 @@ page 50203 CarsListPage
             {
                 trigger OnAction()
                 var
-                    ApiControllerRequest: Codeunit CarsApiControllerRequest;
+                    ApiControllerRequest: Codeunit CarsApiControllerCodeunit;
                     response: Text;
                     errorMsg: Text;
-                    apiResponse: Codeunit CarsApiControllerResponse;
+                    apiResponse: Codeunit CarsApiControllerCodeunit;
                 begin
                     response := ApiControllerRequest.GET('https://parallelum.com.br/fipe/api/v1/carros/marcas', errorMsg);
                     if errorMsg <> '' then
@@ -63,23 +63,22 @@ page 50203 CarsListPage
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
-        if (Rec.codigo = '') then
+        if (Rec."Code" = '') then
             Error(ErrorFieldCodeEmpty);
-        if (Rec.nome = '') then
+        if (Rec.Brand = '') then
             Error(ErrorFieldNameEmpty);
     end;
 
     trigger OnClosePage()
     begin
-        if (Rec.codigo = '') then
+        if (Rec."Code" = '') then
             Error(ErrorFieldCodeEmpty);
 
-        if (Rec.nome = '') then
+        if (Rec.Brand = '') then
             Error(ErrorFieldNameEmpty);
     end;
 
     var
-        SelectedCodeCodeunit: Codeunit JSON_Methods;
         ErrorFieldCodeEmpty: Label 'The field code cannot be empty.', Comment = 'PTB=O campo código precisa ser preenchido.';
         ErrorFieldNameEmpty: Label 'The field brand cannot be empty.', Comment = 'PTB=O campo marca precisa ser preenchido.';
 }

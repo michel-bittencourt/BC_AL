@@ -4,6 +4,7 @@ page 50201 CarsCard
     ApplicationArea = All;
     UsageCategory = Documents;
     SourceTable = CarsTable;
+    SourceTableView = sorting(Brand) order(ascending);
     Caption = 'Cars', Comment = 'Carros';
     Editable = false;
 
@@ -13,13 +14,13 @@ page 50201 CarsCard
         {
             repeater(Control1)
             {
-                field(codigo; Rec.codigo)
+                field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
                     Editable = false;
 
                 }
-                field(nome; Rec.nome)
+                field(Name; Rec.Brand)
                 {
                     ApplicationArea = All;
                     Editable = false;
@@ -33,15 +34,13 @@ page 50201 CarsCard
     {
         area(Processing)
         {
-            action(Buy)
+            action("Generate Report")
             {
                 ApplicationArea = All;
 
                 trigger OnAction()
                 begin
-                    if Rec.codigo = '' then begin
-                        Message('Errado');
-                    end;
+                    Report.RunModal(50201);
                 end;
             }
         }

@@ -23,12 +23,12 @@ page 50202 CarsListPageAPI
                     Editable = false;
                     ApplicationArea = All;
                 }
-                field(codigo; Rec.codigo)
+                field("Code"; Rec."Code")
                 {
                     Caption = 'Transaction Type', Comment = 'PTB=Tipo de Transação';
                     ApplicationArea = All;
                 }
-                field(nome; Rec.nome)
+                field(Name; Rec.Brand)
                 {
                     Caption = 'Date', Comment = 'PTB=Data';
                     ApplicationArea = All;

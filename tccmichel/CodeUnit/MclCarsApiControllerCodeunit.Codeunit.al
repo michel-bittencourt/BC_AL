@@ -1,7 +1,29 @@
-codeunit 50202 CarsApiControllerResponse
+codeunit 50201 CarsApiControllerCodeunit
 {
     trigger OnRun()
     begin
+    end;
+
+    procedure GET(requestURL: Text; erroMsg: Text) Json: Text
+    var
+        httpClient: HttpClient;
+        httpResponseMsg: HttpResponseMessage;
+        response: Text;
+    begin
+        erroMsg := '';
+
+        if not httpClient.Get(requestURL, httpResponseMsg) then begin
+            erroMsg := 'The call to webservice is failed';
+        end;
+
+        if not httpResponseMsg.IsSuccessStatusCode then begin
+            erroMsg += '\The request call returned an error message. \Detail: \Status Code: ' +
+                   Format(httpResponseMsg.HttpStatusCode) + '\Description: ' + httpResponseMsg.ReasonPhrase;
+        end;
+
+        httpResponseMsg.Content.ReadAs(response);
+
+        exit(response);
     end;
 
     procedure UsersInfoFromResponse(response: Text): Boolean
@@ -22,19 +44,18 @@ codeunit 50202 CarsApiControllerResponse
                 // Convert JsonToken to JsonObject
                 if json_Token.IsObject then begin
                     userInfo_JsonObject := json_Token.AsObject();
-                    insertUsersDetail(userInfo_JsonObject);
+                    insertData(userInfo_JsonObject);
                 end;
-
             end;
         end;
         //end;
         exit(true);
     end;
 
-    procedure insertUsersDetail(userInfoJsonObject: JsonObject)
+    procedure insertData(userInfoJsonObject: JsonObject)
     var
         recCarsTable: Record CarsTable;
-        json_Methods: Codeunit JSON_Methods;
+        json_Methods: Codeunit MethodsCodeunit;
         retJsonValue: JsonValue; // this can be used when getting value from GetJsonValue method
         addressJsonObject: JsonObject;
         addressJsonToken: JsonToken;
@@ -46,8 +67,8 @@ codeunit 50202 CarsApiControllerResponse
         recCarsTable.Reset();
         recCarsTable.Init();
 
-        recCarsTable.codigo := json_Methods.GetJsonValueAsText(userInfoJsonObject, 'codigo');
-        recCarsTable.nome := json_Methods.GetJsonValueAsText(userInfoJsonObject, 'nome');
+        recCarsTable."Code" := json_Methods.GetJsonValueAsText(userInfoJsonObject, 'codigo');
+        recCarsTable.Brand := json_Methods.GetJsonValueAsText(userInfoJsonObject, 'nome');
 
         recCarsTable.Insert();
     end;

@@ -1,4 +1,4 @@
-codeunit 50203 JSON_Methods
+codeunit 50203 MethodsCodeunit
 {
     trigger OnRun()
     begin
@@ -18,7 +18,6 @@ codeunit 50203 JSON_Methods
         exit(true);
     end;
 
-    // Work for Text Response
     procedure GetJsonValueAsText(var json_Object: JsonObject; Property: Text) Value: Text
     var
         json_Value: JsonValue;
@@ -31,12 +30,18 @@ codeunit 50203 JSON_Methods
         Value := json_Value.AsText;
     end;
 
-    procedure RecebeCodeCar(SelectedCar: Code[20]) value: code[20]
+    procedure GetJsonValueAsCode(var json_Object: JsonObject; Property: Code[20]) Value: Code[20]
+    var
+        json_Value: JsonValue;
     begin
-        value := SelectedCar;
+        if not GetJsonValue(json_Object, Property, json_Value) then begin
+            Message(ErrorQuery);
+            exit;
+        end;
+
+        Value := json_Value.AsCode();
     end;
 
     var
-        SelectCode: code[20];
         ErrorQuery: Label 'Error in the query. If the issue persists, please contact the developers.', Comment = 'Erro na consulta. Caso persista, entre em contato com os desenvolvedores.';
 }

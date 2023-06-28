@@ -6,13 +6,13 @@ table 50201 CarsTable
     fields
     {
 
-        field(2; "codigo"; Code[20])
+        field(2; "Code"; Text[200])
         {
             Caption = 'Code', Comment = 'PTB=Código';
             DataClassification = ToBeClassified;
 
         }
-        field(3; "nome"; Text[200])
+        field(3; "Brand"; Text[200])
         {
             Caption = 'Brand', Comment = 'PTB=Marca';
             DataClassification = ToBeClassified;
@@ -21,12 +21,15 @@ table 50201 CarsTable
 
     keys
     {
-        key(Key1; "codigo")
+        key(Key1; "Code", Brand)
         {
             Clustered = true;
         }
-        key(Key2; "nome")
-        {
-        }
     }
+    trigger OnDelete()
+    var
+        DeletedSuccess: Label 'Field deleted successfully';
+    begin
+        Message(DeletedSuccess);
+    end;
 }
